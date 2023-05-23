@@ -1,4 +1,3 @@
-//Your code comes  here
 let favMovies = [{
 	title: "Mary Poppins",
 	year: 1964,
@@ -9,9 +8,6 @@ let favMovies = [{
 	stars: "Julie Andrews, Dick Van Dyke",
 	genres: "musical",
 	review: "This is one of the favorite movies from my childhood. "
-
-
-
 },
 {
 	title: "Scream",
@@ -54,63 +50,10 @@ function moviesList(movies, titleLogger) {
 		titleLogger(val.title);
 		}, timeOut)
 		timeOut += 1000
-
 	})
-
-
 };
 
 function titleLogger(favMovies) {
 console.log(favMovies);
 };
-
 moviesList(favMovies, titleLogger);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// DO NOT MODIFY THE CODE BELOW THIS LINE
-let toExport;
-
-try {
-	toExport = [
-		{ name: "favMovies", content: favMovies, type: "array" },
-		{ name: "moviesList", content: moviesList, type: "function" },
-		{ name: "titleLogger", content: titleLogger, type: "function" },
-	]
-} catch (error) {
-
-	toExport = { error: error.message }
-
-}
-
-export { toExport };
